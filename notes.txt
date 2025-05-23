@@ -3,7 +3,7 @@ frontend> npm create vite@latest .
 npm i 
 np run dev
 
-2> tailwindcss v3
+2>
 npm install -D tailwindcss@3 postcss autoprefixer
 npx tailwindcss init -p
 
@@ -17,3 +17,9 @@ create repo
 git remote add origin https://github.com/Kamal-Kothari/spotify-app.git
 git branch -M main
 git push -u origin main
+
+4> shadcn 
+use chatgpt
+
+5> clerk
+for authentication
