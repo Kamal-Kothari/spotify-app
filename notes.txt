@@ -1,0 +1,19 @@
+1>
+frontend> npm create vite@latest .
+npm i 
+np run dev
+
+2> tailwindcss v3
+npm install -D tailwindcss@3 postcss autoprefixer
+npx tailwindcss init -p
+
+3>
+git init
+git add . // before this create .gitignore file to exclude node_modules .env etc
+git commit -m " "
+
+create repo
+
+git remote add origin https://github.com/Kamal-Kothari/spotify-app.git
+git branch -M main
+git push -u origin main
