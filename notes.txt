@@ -23,3 +23,8 @@ use chatgpt
 
 5> clerk
 for authentication
+
+6> backend setup
+backend> npm init -y
+npm vs pnpm
+route setup
