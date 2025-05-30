@@ -7,6 +7,7 @@ import songRoutes from './routes/song.route.js';
 import albumRoutes from './routes/album.route.js';
 import statRoutes from './routes/stat.route.js';
 import connectDB from './lib/db.js';
+import {clerkMiddleware} from '@clerk/express';
 
 dotenv.config();
 
@@ -14,6 +15,10 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(express.json());
+app.use(clerkMiddleware());     // Middleware for Clerk authentication
+// The clerkMiddleware() function checks the request's cookies and headers for a session JWT and if found, attaches the Auth object to the request object under the auth key.
+
+// app.use(express.urlencoded({ extended: true }));
 
 app.use("/api/users", userRoutes);
 app.use("/api/admin", adminRoutes);

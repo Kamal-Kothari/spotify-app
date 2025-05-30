@@ -28,3 +28,13 @@ for authentication
 backend> npm init -y
 npm vs pnpm
 route setup
+
+7> mongodb
+.env must be in root of backend / frontend , not inside src
+
+
+
+
+
+
+
