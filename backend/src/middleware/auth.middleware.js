@@ -26,7 +26,7 @@ export const protectRoute = async (req, res, next) => {
   }
 }
 
-export const adminRoute = async (req, res, next) => {
+export const requireAdmin = async (req, res, next) => {
   try {
     // Check if the user is authenticated
     const { userId } = req.auth;

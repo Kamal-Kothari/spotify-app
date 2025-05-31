@@ -32,6 +32,8 @@ route setup
 7> mongodb
 .env must be in root of backend / frontend , not inside src
 
+8> split editor
+crtl + \
 
 
 
